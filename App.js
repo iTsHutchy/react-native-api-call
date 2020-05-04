@@ -17,7 +17,7 @@ export default class App extends React.Component {
     .then((responseJson) => {
       this.setState({
         isLoading: false,
-        dateSource: responseJson.movies,
+        dataSource: responseJson.movies,
       })
     })
     .catch((error) => {
@@ -54,4 +54,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  item: {
+    flex: 1
+  }
 });
